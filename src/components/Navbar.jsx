@@ -51,18 +51,36 @@ const Navbar = () => {
       justifyContent="space-between"
       p="29px 91px"
       display={{
-        sm: "none",
-        md: "none",
-        lg: "none",
+        sm: "block",
+        md: "block",
+        lg: "flex",
         xl: "flex",
         "2xl": "flex",
       }}
+      w={{
+        sm: "300px",
+        md: "400px",
+        lg: "800px",
+        xl: "1000px",
+        "2xl": "1200px",
+      }}
+      mx="auto"
     >
       <Box cursor="pointer">
         <Image w="238px" h="52px" src={Logo} />
       </Box>
 
-      <Stack direction="row" alignItems="center">
+      <Stack
+        direction="row"
+        alignItems="center"
+        mt={{
+          sm: "20px",
+          md: "20px",
+          lg: "0",
+          xl: "0",
+          "2xl": "0",
+        }}
+      >
         {socials.map((social, index) => {
           return (
             <Link
@@ -70,8 +88,9 @@ const Navbar = () => {
               href={social.to}
               target={social.target}
               rel={social.rel}
+              h="34px"
             >
-              <Image src={social.icon} w="34px" h="34px" ml="15px" />
+              <Image src={social.icon} w="34px" />
             </Link>
           );
         })}
