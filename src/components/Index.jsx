@@ -5,10 +5,7 @@ import Enquires from "./Enquires";
 import Navbar from "./Navbar";
 
 const Index = () => {
-  const THREE_DAYS_IN_MS = 3 * 24 * 60 * 60 * 1000;
-  const NOW_IN_MS = new Date().getTime();
-
-  const dateTimeAfterThreeDays = NOW_IN_MS + THREE_DAYS_IN_MS;
+  const dateTimeAfterOneDay = 1667260800000;
 
   return (
     <Box>
@@ -27,7 +24,7 @@ const Index = () => {
           <Heading pb="60px" fontFamily="Playfair Display">
             Countdown To Launch Of New Website
           </Heading>
-          <CountdownTimer targetDate={dateTimeAfterThreeDays} />
+          <CountdownTimer targetDate={dateTimeAfterOneDay} />
         </Box>
       </Box>
       <Enquires
