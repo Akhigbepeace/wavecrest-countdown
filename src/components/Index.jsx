@@ -22,7 +22,7 @@ const Index = () => {
           mx="auto"
         >
           <Heading pb="60px" fontFamily="Playfair Display">
-            Countdown To Launch Of New Website
+            Countdown to Launch of New Website
           </Heading>
           <CountdownTimer targetDate={dateTimeAfterOneDay} />
         </Box>
