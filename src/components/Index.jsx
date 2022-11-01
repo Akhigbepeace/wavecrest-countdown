@@ -5,7 +5,7 @@ import Enquires from "./Enquires";
 import Navbar from "./Navbar";
 
 const Index = () => {
-  const dateTimeAfterOneDay = 1667318400000;
+  const dateTimeAfterOneDay = 1667320200000;
 
   return (
     <Box>
